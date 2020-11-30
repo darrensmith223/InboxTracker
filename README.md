@@ -1,5 +1,5 @@
 # InboxTracker
-Python library for InboxTracker
+Python library for Inbox Tracker
 
 
 

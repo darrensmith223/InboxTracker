@@ -14,4 +14,4 @@ def test_GetCampaignById():
     apiKey = "fake-key"
     campaignId = "test-campaign"
     response = inboxtracker.GetCampaignById(apiKey, campaignId)
-    assert response.status_code == 200
+    assert response == "yay"

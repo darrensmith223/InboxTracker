@@ -5,7 +5,7 @@ import inboxtracker
 @responses.activate
 def test_GetCampaignById():
     campaignId = "test-campaign"
-    apiUrl = "http://api.edatasource.com/v4/inbox/campaigns/" + campaignId
+    apiUrl = "http://api.edatasource.com/v4/inbox/campaigns/test-campaign?Authorization=fake-key"
     responses.add(
         responses.POST,
         apiUrl,
@@ -13,8 +13,5 @@ def test_GetCampaignById():
         content_type='application/json',
         body='{"results": "yay"}'
     )
-
     apiKey = "fake-key"
-    intermediaryDomain = "intermediary.domain"
     response = inboxtracker.GetCampaignById(apiKey, campaignId)
-    assert response.status_code == 200

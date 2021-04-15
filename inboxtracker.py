@@ -1,6 +1,5 @@
 import requests
 import json
-import csv
 
 
 def GetCampaignById(apiKey, campaignId, embed=None):

@@ -7,11 +7,11 @@ InboxTracker Python API Client
 ========================================
 
 Guide:
-^^^^^
+^^^^^^
 
 .. toctree::
    :maxdepth: 2
-   :caption:
+   :caption: Contents
 
 
 

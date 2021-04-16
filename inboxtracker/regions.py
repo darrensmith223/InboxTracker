@@ -12,7 +12,7 @@ class Regions(Resource):
         Gets current list of regions supported by the system.
 
         :return: A ``list`` object of available regions as ``str``.  See
-            `Current Regions<https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
+            `Current Regions <https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
             for an updated list of supported regions.
         """
 

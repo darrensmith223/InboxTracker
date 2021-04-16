@@ -20,14 +20,15 @@ class Intelliseeds(Resource):
         :param int childAccountId:  The child account to narrow results
         :param str type:  The type of IntelliSeed list to pull.
 
-            Accepts: ``public``, ``private``, ``exclusive``. Default is private
+            Accepts:  ``public``, ``private``, ``exclusive``. Default is private
         :param int percentOfList:  The integer percent, 1-100, of the IntelliSeed list to pull. Default is 100
         :param str simulatedEngagementOption:  Which engagement types of IntelliSeed accounts to include.
 
             Accepts:  ``ALL``, ``ENGAGING``, and ``NON_ENGAGING``.  Default is ``ALL``
+
         :param regions:  List of strings.  The regions to include IntelliSeed accounts from.
             For options, See
-            `Current Regions<https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
+            `Current Regions <https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
 
             Default is all regions.
 
@@ -106,7 +107,7 @@ class Intelliseeds(Resource):
             Accepts: ``ALL``, ``ENGAGING``, ``NON_ENGAGING``
         :param int percentOfList: Percent of the list to include. Integer from 0-100.
         :param regions: List of strings.  The regions to include.  For options, See
-            `Current Regions<https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
+            `Current Regions <https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
         :param int childAccountId: The child account to place filter
 
         :return: A ``dict`` object containing the details of the crated IntelliSeed list, such as the name and ID.

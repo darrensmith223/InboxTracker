@@ -13,7 +13,27 @@ Guide:
    :maxdepth: 2
    :caption: Contents
 
+Resources
+---------
 
+The following resources are available in python-sparkpost:
+
+.. toctree::
+    :glob:
+    :maxdepth: 1
+
+    resources/*
+
+
+API reference
+-------------
+
+Auto-generated API reference for python-sparkpost:
+
+.. toctree::
+    :maxdepth: 2
+
+    api
 
 
 Indices and tables

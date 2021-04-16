@@ -24,7 +24,7 @@ class Campaigns(Resource):
 
     def get_campaigns(self, **kwargs):
         """
-        Test if this updates. Get all campaign details for a given time period
+        Get all campaign details for a given time period
 
         :param qd:  A date range query parameter.
             Accepts "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss", and "daysBack:N".
@@ -70,10 +70,11 @@ class Campaigns(Resource):
 
     def get_ip_stats(self, **kwargs):
         """
-        Get statistics for all IP addresses in your account :param qd:  A date range query parameter.
+        Get statistics for all IP addresses in your account
+
+        :param qd:  A date range query parameter.
             Accepts: "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss", and "daysBack:N".
             Examples: 'since:20190601', 'between:20191001000000,20191002060000', 'daysBack:30'
-
         :param childAccountId:  (Array) The child account(s) to narrow results
         :param ipAddress:  (Array) The ip address to narrow results to (multiple allowed)
         :param domain:  (Array) Narrow results to certain domains that are under this API key (multiple allowed)

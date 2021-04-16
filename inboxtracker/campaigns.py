@@ -24,7 +24,7 @@ class Campaigns(Resource):
 
     def get_campaigns(self, **kwargs):
         """
-        Get all campaign details for a given time period
+        Test if this updates. Get all campaign details for a given time period
 
         :param qd:  A date range query parameter.
             Accepts "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss", and "daysBack:N".

@@ -1,4 +1,3 @@
-import json
 from .base import Resource
 
 
@@ -18,11 +17,13 @@ class Deliverability(Resource):
 
         :param domain:  The domain to show results for
 
-        :param qd:  A date range query parameter.  Accepts "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss",
-        and "daysBack:N".Examples: 'since:20190601', 'between:20191001000000,20191002060000', 'daysBack:30'
+        :param qd:  A date range query parameter.
+        Accepts "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss", and "daysBack:N".
 
-        :param embed:  The objects within the return model you wish to embed.  Embed parameter accepts:
-        gmailCategories, deliveryIndex, ipDetails
+        Examples: 'since:20190601', 'between:20191001000000,20191002060000', 'daysBack:30'
+
+        :param embed:  The objects within the return model you wish to embed.
+        Embed parameter accepts: gmailCategories, deliveryIndex, ipDetails
 
         :return:  'dict' object
         """

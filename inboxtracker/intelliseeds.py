@@ -25,13 +25,13 @@ class Intelliseeds(Resource):
         :param str simulatedEngagementOption:  Which engagement types of IntelliSeed accounts to include.
 
             Accepts:  ``ALL``, ``ENGAGING``, and ``NON_ENGAGING``.  Default is ``ALL``
-        :param list|str regions:  Which regions to include IntelliSeed accounts from.
+        :param regions:  List of strings.  The regions to include IntelliSeed accounts from.
             For options, See
-            `Current Regions<https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`
+            `Current Regions<https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
 
             Default is all regions.
 
-        :return:  A 'list' object of 'dict' containing details of an IntelliSeed address, including email address,
+        :return:  A ``list`` object of ``dict`` containing details of an IntelliSeed address, including email address,
             location, and ISP.
         """
 
@@ -48,7 +48,7 @@ class Intelliseeds(Resource):
 
         :param int childAccountId:  The child account to narrow results
 
-        :return:  A 'list' object of 'dict' containing the account ID and last update date of the IntelliSeed list.
+        :return:  A ``list`` object of 'dict' containing the account ID and last update date of the IntelliSeed list.
         """
 
         endpoint = "/lastUpdate"
@@ -64,7 +64,8 @@ class Intelliseeds(Resource):
 
         :param int childAccountId: The child account to narrow results
 
-        :return: A 'list' object of 'dict' containing details of a filter set, such as the name of the IntelliSeed list.
+        :return: A ``list`` object of 'dict' containing details of a filter set, such as the name of the IntelliSeed
+            list.
         """
 
         endpoint = "/filter_sets"
@@ -81,7 +82,7 @@ class Intelliseeds(Resource):
         :param int filterSetId: The id of the IntelliSeed filter set
         :param int childAccountId: The child account to narrow results
 
-        :return: A 'list' object of 'dict' containing details of the specified filter set, such as the name and ID of
+        :return: A ``list`` object of 'dict' containing details of the specified filter set, such as the name and ID of
             the IntelliSeed list.
         """
 
@@ -104,10 +105,11 @@ class Intelliseeds(Resource):
 
             Accepts: ``ALL``, ``ENGAGING``, ``NON_ENGAGING``
         :param int percentOfList: Percent of the list to include. Integer from 0-100.
-        :param list|str regions: List of regions to include.
+        :param regions: List of strings.  The regions to include.  For options, See
+            `Current Regions<https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
         :param int childAccountId: The child account to place filter
 
-        :return: A 'dict' object containing the details of the crated IntelliSeed list, such as the name and ID.
+        :return: A ``dict`` object containing the details of the crated IntelliSeed list, such as the name and ID.
         """
 
         data_model = {
@@ -134,7 +136,7 @@ class Intelliseeds(Resource):
         :param int filterSetId: The id of the IntelliSeed filter set
         :param int childAccountId: The child account to narrow results
 
-        :return: A 'dict' object containing the details of the deleted IntelliSeed list, such as the name and ID.
+        :return: A ``dict`` object containing the details of the deleted IntelliSeed list, such as the name and ID.
         """
 
         endpoint = "/filter_sets/" + str(filterSetId)

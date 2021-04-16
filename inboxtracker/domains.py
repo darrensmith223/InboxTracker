@@ -14,7 +14,7 @@ class Domains(Resource):
 
         :param int childAccountId:  The child account to narrow results
 
-        :return:  A 'list' object of 'dict' containing details of the domains available.
+        :return:  A ``list`` object of ``dict`` containing details of the domains available.
         """
 
         endpoint = "/available"

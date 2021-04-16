@@ -14,7 +14,7 @@ class Seeds(Resource):
 
         :param int childAccountId:  The child account to narrow results
 
-        :return:  A 'list' object of 'dict' containing the seed list ID, account ID, and last updated date
+        :return:  A ``list`` object of ``dict`` containing the seed list ID, account ID, and last updated date
         """
 
         endpoint = "/lastUpdate"
@@ -30,7 +30,7 @@ class Seeds(Resource):
 
         :param int childAccountId:  The child account to narrow results
 
-        :return:  A 'list' object of 'dict' containing the usage details of the seed list.
+        :return:  A ``list`` object of ``dict`` containing the usage details of the seed list.
         """
 
         endpoint = "/usage"
@@ -46,8 +46,8 @@ class Seeds(Resource):
 
         :param int childAccountId:  The child account to narrow results
 
-        :return:  A 'list' object of 'dict' containing the details of the seeds, such as the email address, location,
-            and ISP.
+        :return:  A ``list`` object of ``dict`` containing the details of the seeds, such as the email address,
+            location, and ISP.
         """
 
         endpoint = ""

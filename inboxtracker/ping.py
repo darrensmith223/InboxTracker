@@ -1,4 +1,3 @@
-import json
 from .base import Resource
 
 
@@ -8,7 +7,8 @@ class Ping(Resource):
     def ping_service(self):
         """
         Ping the server to verify it is reachable
-        :return:  'string' object
+
+        :return:  'string' object.  A successful ping will return the string 'pong'.
         """
 
         endpoint = ""

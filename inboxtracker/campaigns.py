@@ -1,4 +1,3 @@
-import json
 from .base import Resource
 
 
@@ -27,8 +26,9 @@ class Campaigns(Resource):
         """
         Get all campaign details for a given time period
 
-        :param qd:  A date range query parameter.  Accepts "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss",
-        and "daysBack:N". Examples: 'since:20190601','between:20191001000000,20191002060000', 'daysBack:30'
+        :param qd:  A date range query parameter.
+        Accepts "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss", and "daysBack:N".
+        Examples: 'since:20190601', 'between:20191001000000,20191002060000', 'daysBack:30'
 
         :param campaignIdentifier:  The campaign identifier value to search for.
         :param fromAddress:  The from address to search for
@@ -38,12 +38,12 @@ class Campaigns(Resource):
         :param per_page:  The amount of records per page you wish to query for (max 100)
         :param order:  The property to sort by ('property' for decending, '-property' for ascending)
         :param embed:  The objects within the return model you wish to embed.
-                        Embed parameter accepts: sendingIps,gmailCategories,authInbox
+                        Embed parameter accepts: sendingIps, gmailCategories, authInbox
 
         :return:  'list' object
         """
 
-        endpoint = ""  # e.g. "/sendingIps"
+        endpoint = ""
         apiUrl = self.uri + endpoint
         parameters = self.SetParameters(kwargs, self.param_model)
         apiResponse = self.request("GET", apiUrl, params=parameters)
@@ -55,8 +55,8 @@ class Campaigns(Resource):
         Get campaign details by querying campaign identifier.
         :param campaignId: Integer campaign identifier
 
-        :param embed:  The objects within the return model you wish to embed.  Embed parameter accepts: sendingIps,
-        gmailCategories,authInbox
+        :param embed:  The objects within the return model you wish to embed.
+        Embed parameter accepts: sendingIps, gmailCategories, authInbox
 
         :return:  'dict' object.
         """
@@ -85,7 +85,7 @@ class Campaigns(Resource):
         :return:  'list' object
         """
 
-        endpoint = "/sendingIps"  # e.g. "/sendingIps"
+        endpoint = "/sendingIps"
         apiUrl = self.uri + endpoint
         parameters = self.SetParameters(kwargs, self.param_model)
         apiResponse = self.request("GET", apiUrl, params=parameters)

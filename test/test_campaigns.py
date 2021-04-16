@@ -33,7 +33,7 @@ def test_get_campaign_by_id():
         body='{"results": "yay"}'
     )
     json_output = it.campaigns.get_campaign_by_id(campaignId, embed=embed)
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'
 
 @responses.activate
 def test_get_ip_stats():
@@ -49,4 +49,4 @@ def test_get_ip_stats():
         body='{"results": "yay"}'
     )
     json_output = it.campaigns.get_ip_stats(qd=qd)
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'

@@ -15,4 +15,4 @@ def test_ping_service():
         body='{"results": "yay"}'
     )
     output = it.ping.ping_service()
-    assert output == "pong"
+    assert output == "yay"

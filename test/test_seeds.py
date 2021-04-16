@@ -15,7 +15,7 @@ def test_get_last_update():
         body='{"results": "yay"}'
     )
     json_output = it.seeds.get_last_update()
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'
 
 
 @responses.activate
@@ -31,7 +31,7 @@ def test_get_usage():
         body='{"results": "yay"}'
     )
     json_output = it.seeds.get_usage()
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'
 
 
 @responses.activate
@@ -47,4 +47,4 @@ def test_get_seeds():
         body='{"results": "yay"}'
     )
     json_output = it.seeds.get_seeds()
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'

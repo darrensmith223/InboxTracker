@@ -15,4 +15,4 @@ def test_get_regions():
         body='{"results": "yay"}'
     )
     json_output = it.regions.get_regions()
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'

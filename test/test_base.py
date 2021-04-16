@@ -31,7 +31,8 @@ def test_success_request():
         body='{}'
     )
     resource = create_resource()
-    results = resource.request('GET', resource.uri)
+    params = {}
+    results = resource.request('GET', resource.uri, params=params)
     assert results == {}
 
 
@@ -45,7 +46,8 @@ def test_success_request_with_results():
         body='{"results": []}'
     )
     resource = create_resource()
-    results = resource.request('GET', resource.uri)
+    params = {}
+    results = resource.request('GET', resource.uri, params=params)
     assert results == []
 
 
@@ -59,8 +61,9 @@ def test_fail_request():
         body='{"errors": [{"message": "failure", "description": "desc"}]}'
     )
     resource = create_resource()
+    params = {}
     with pytest.raises(InboxTrackerAPIException):
-        resource.request('GET', resource.uri)
+        resource.request('GET', resource.uri, params=params)
 
 
 @responses.activate
@@ -73,8 +76,9 @@ def test_fail_wrongjson_request():
         body='{"errors": ["Error!"]}'
     )
     resource = create_resource()
+    params = {}
     with pytest.raises(InboxTrackerAPIException):
-        resource.request('GET', resource.uri)
+        resource.request('GET', resource.uri, params=params)
 
 
 @responses.activate
@@ -87,8 +91,9 @@ def test_fail_nojson_request():
         body='{"errors": '
     )
     resource = create_resource()
+    params = {}
     with pytest.raises(InboxTrackerAPIException):
-        resource.request('GET', resource.uri)
+        resource.request('GET', resource.uri, params=params)
 
 
 @responses.activate
@@ -101,8 +106,9 @@ def test_fail_no_errors():
         body='no errors'
     )
     resource = create_resource()
+    params = {}
     with pytest.raises(InboxTrackerAPIException):
-        resource.request('GET', resource.uri)
+        resource.request('GET', resource.uri, params=params)
 
 
 def test_fail_get():

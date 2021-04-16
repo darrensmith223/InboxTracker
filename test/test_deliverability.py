@@ -17,4 +17,4 @@ def test_get_deliverability_by_domain():
         body='{"results": "yay"}'
     )
     json_output = it.deliverability.get_deliverability_by_domain(domain, qd=qd)
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'

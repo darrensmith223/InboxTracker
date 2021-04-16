@@ -15,4 +15,4 @@ def test_get_available_domains():
         body='{"results": "yay"}'
     )
     json_output = it.domains.get_available_domains()
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'

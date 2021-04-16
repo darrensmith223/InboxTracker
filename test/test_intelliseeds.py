@@ -86,7 +86,7 @@ def test_create_intelliseed_filter():
         percentOfList="test-pct",
         regions=["test-region"]
     )
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'
 
 
 @responses.activate

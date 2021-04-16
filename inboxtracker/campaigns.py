@@ -27,8 +27,8 @@ class Campaigns(Resource):
         Get all campaign details for a given time period
 
         :param qd:  A date range query parameter.
-        Accepts "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss", and "daysBack:N".
-        Examples: 'since:20190601', 'between:20191001000000,20191002060000', 'daysBack:30'
+            Accepts "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss", and "daysBack:N".
+            Examples: 'since:20190601', 'between:20191001000000,20191002060000', 'daysBack:30'
 
         :param campaignIdentifier:  The campaign identifier value to search for.
         :param fromAddress:  The from address to search for
@@ -53,10 +53,10 @@ class Campaigns(Resource):
     def get_campaign_by_id(self, campaignId, **kwargs):
         """
         Get campaign details by querying campaign identifier.
-        :param campaignId: Integer campaign identifier
 
+        :param campaignId: Integer campaign identifier
         :param embed:  The objects within the return model you wish to embed.
-        Embed parameter accepts: sendingIps, gmailCategories, authInbox
+            Embed parameter accepts: "sendingIps", "gmailCategories", "authInbox"
 
         :return:  'dict' object.
         """
@@ -70,9 +70,9 @@ class Campaigns(Resource):
 
     def get_ip_stats(self, **kwargs):
         """
-        Get statistics for all IP addresses in your account :param qd:  A date range query parameter.  Accepts
-        "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss", and "daysBack:N". Examples: 'since:20190601',
-        'between:20191001000000,20191002060000', 'daysBack:30'
+        Get statistics for all IP addresses in your account :param qd:  A date range query parameter.
+            Accepts: "since:YYYYMMDD", "between:YYYYMMDDhhmmss,YYYYMMDDhhmmss", and "daysBack:N".
+            Examples: 'since:20190601', 'between:20191001000000,20191002060000', 'daysBack:30'
 
         :param childAccountId:  (Array) The child account(s) to narrow results
         :param ipAddress:  (Array) The ip address to narrow results to (multiple allowed)

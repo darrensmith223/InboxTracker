@@ -18,7 +18,8 @@ class Intelliseeds(Resource):
         Get an updated IntelliSeed list
 
         :param childAccountId:  The child account to narrow results
-        :param type:  The type of IntelliSeed list to pull (public, private, or exclusive) default is private
+        :param type:  The type of IntelliSeed list to pull.
+            Accepts: "public", "private", "exclusive". Default is private
 
         :return:  'list' object
         """
@@ -67,7 +68,6 @@ class Intelliseeds(Resource):
         Gets the latest IntelliSeed list associated with the filter set id provided
 
         :param filterSetId: The id of the IntelliSeed filter set
-
         :param childAccountId: The child account to narrow results
 
         :return: 'list' object
@@ -85,9 +85,9 @@ class Intelliseeds(Resource):
         Places a new IntelliSeed filter set under the given account
 
         :param name: Name of the filter set
-        :param listType: Privacy level of list. Accepts: "PUBLIC", "PRIVATE"
+        :param listType: Privacy level of list. Accepts: "PUBLIC", "EXCLUSIVE", "PRIVATE"
         :param simulatedEngagementOption: Engagement level of the IntelliSeeds to include in the list.
-        Accepts: "ALL", "Engaging", "Non-engaging"
+            Accepts: "ALL", "ENGAGING", "NON_ENGAGING"
         :param percentOfList: Percent of the list to include. Integer from 0-100.
         :param regions: List of regions to include.
         :param childAccountId: The child account to place filter
@@ -108,6 +108,7 @@ class Intelliseeds(Resource):
         parameters = self.SetParameters(kwargs, self.param_model)
         data = self.translate_keys(kwargs, data_model)
         data = json.dumps(data)
+        print(data)
         apiResponse = self.request("POST", apiUrl, params=parameters, data=data)
 
         return apiResponse

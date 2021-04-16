@@ -11,10 +11,9 @@ class Regions(Resource):
         """
         Gets current list of regions supported by the system.
 
-        See
-        :ref:`Current Regions<https://inboxtracker.readthedocs.io/en/latest/api/regions.html>`_
-
-        :return: 'list' object
+        :return: A 'list' object of available regions as 'str'.  See
+            `Current Regions<https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`
+            for an updated list of supported regions.
         """
 
         endpoint = ""

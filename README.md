@@ -8,6 +8,8 @@ Python library for Inbox Tracker
 
 
 # Documentation
+Documentation for [InboxTracker Python Client](https://inboxtracker.readthedocs.io/en/latest/)
+
 [Inbox Tracker API Documentation](http://api.edatasource.com/docs/#/inbox)
 
 

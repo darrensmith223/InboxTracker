@@ -28,14 +28,15 @@ class Campaigns(Resource):
 
         :param str qd:  A date range query parameter.
 
-            Accepts:  ``since:YYYYMMDD``, ``between:YYYYMMDDhhmmss,YYYYMMDDhhmmss``, and ``daysBack:N``.
+                Accepts:  ``since:YYYYMMDD``, ``between:YYYYMMDDhhmmss,YYYYMMDDhhmmss``, and ``daysBack:N``.
 
-            Examples:  ``since:20190601``, ``between:20191001000000,20191002060000``, ``daysBack:30``
+                Examples:  ``since:20190601``, ``between:20191001000000,20191002060000``, ``daysBack:30``
 
         :param str campaignIdentifier:  The campaign identifier value to search for.
         :param str fromAddress:  The from address to search for
         :param int childAccountId:  The child account to narrow results
-        :param domain:  List of strings.  Narrow results to certain domains that are under this API key (multiple allowed)
+        :param domain:  List of strings.  Narrow results to certain domains that are under this API key
+            (multiple allowed)
         :param str headerKey:  Campaigns that used a specific header key
         :param str headerValue:  Campaigns that used a specific header value
         :param str subject:  Subject search criteria
@@ -44,11 +45,11 @@ class Campaigns(Resource):
         :param int per_page:  The amount of records per page you wish to query for (max 100)
         :param str order:  The property to sort by ('property' for decending, '-property' for ascending)
 
-            Accepts:  ``firstSeen``, ``-firstSeen``, ``lastSeen``, ``-lastSeen``, ``inbox``, ``-inbox``, ``spam``,
-            ``-spam``
+                Accepts:  ``firstSeen``, ``-firstSeen``, ``lastSeen``, ``-lastSeen``, ``inbox``, ``-inbox``, ``spam``,
+                ``-spam``
         :param str embed:  The objects within the return model you wish to embed.
 
-            Accepts:  ``sendingIps``, ``gmailCategories``, ``authInbox``
+                Accepts:  ``sendingIps``, ``gmailCategories``, ``authInbox``
 
         :return:  A ``list`` object of ``dict`` containing details for a campaign.
         """
@@ -68,7 +69,7 @@ class Campaigns(Resource):
         :param int childAccountId:  The child account to narrow results
         :param str embed:  The objects within the return model you wish to embed.
 
-            Accepts:  ``sendingIps``, ``gmailCategories``, ``authInbox``
+                Accepts:  ``sendingIps``, ``gmailCategories``, ``authInbox``
 
         :return:  A ``dict`` object containing details of the specified campaign.
         """
@@ -86,12 +87,13 @@ class Campaigns(Resource):
 
         :param str qd:  A date range query parameter.
 
-            Accepts:  ``since:YYYYMMDD``, ``between:YYYYMMDDhhmmss,YYYYMMDDhhmmss``, and ``daysBack:N``.
+                Accepts:  ``since:YYYYMMDD``, ``between:YYYYMMDDhhmmss,YYYYMMDDhhmmss``, and ``daysBack:N``.
 
-            Examples:  ``since:20190601``, ``between:20191001000000,20191002060000``, ``daysBack:30``
+                Examples:  ``since:20190601``, ``between:20191001000000,20191002060000``, ``daysBack:30``
         :param childAccountId:  List of int.  The child account(s) to narrow results
         :param ipAddress:  List of strings.  The ip address to narrow results to (multiple allowed)
-        :param domain:  List of strings.  Narrow results to certain domains that are under this API key (multiple allowed)
+        :param domain:  List of strings.  Narrow results to certain domains that are under this API key (multiple
+            allowed)
         :param bool limitToSpecifiedDomains:  Only include data for the supplied domains (vs all domains using the IPs)
         :param int page:  The page to query for in pagination
         :param int per_page:  The amount of records per page you wish to query for (max 100)

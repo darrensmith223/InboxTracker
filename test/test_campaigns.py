@@ -16,7 +16,7 @@ def test_get_campaigns():
         body='{"results": "yay"}'
     )
     json_output = it.campaigns.get_campaigns(qd=qd)
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'
 
 @responses.activate
 def test_get_campaign_by_id():

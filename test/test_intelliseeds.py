@@ -15,7 +15,7 @@ def test_get_intelliseeds():
         body='{"results": "yay"}'
     )
     json_output = it.intelliseeds.get_intelliseeds()
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'
 
 
 @responses.activate
@@ -31,7 +31,7 @@ def test_get_last_update():
         body='{"results": "yay"}'
     )
     json_output = it.intelliseeds.get_last_update()
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'
 
 
 @responses.activate
@@ -47,7 +47,7 @@ def test_get_filter_sets():
         body='{"results": "yay"}'
     )
     json_output = it.intelliseeds.get_filter_sets()
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'
 
 
 @responses.activate
@@ -64,7 +64,7 @@ def test_get_intelliseeds_filtered():
         body='{"results": "yay"}'
     )
     json_output = it.intelliseeds.get_intelliseeds_filtered(filterSetId)
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'
 
 
 @responses.activate
@@ -103,4 +103,4 @@ def test_delete_intelliseed_filter():
         body='{"results": "yay"}'
     )
     json_output = it.intelliseeds.delete_intelliseed_filter(filterSetId)
-    assert json_output == {'results': 'yay'}
+    assert json_output == 'yay'

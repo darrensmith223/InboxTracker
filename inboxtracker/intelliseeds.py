@@ -112,7 +112,6 @@ class Intelliseeds(Resource):
         parameters = self.SetParameters(kwargs, self.param_model)
         data = self.translate_keys(kwargs, data_model)
         data = json.dumps(data)
-        print(data)
         apiResponse = self.request("POST", apiUrl, params=parameters, data=data)
 
         return apiResponse

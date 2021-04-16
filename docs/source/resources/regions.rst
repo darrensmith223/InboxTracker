@@ -25,11 +25,19 @@ Header 1.1
     Code
 
 
-Header 1.2
-**********
+Supported Regions
+*****************
 
-.. code-block:: python
-
-    from inboxtracker import InboxTracker
-
-    Code
+* ``Asia Pacific``
+* ``B2B``
+* ``Europe - France``
+* ``Europe - Germany``
+* ``Europe - Italy``
+* ``Europe - Other``
+* ``Europe - UK``
+* ``N/A``
+* ``North America - Canada``
+* ``North America - US``
+* ``Primary Webmail``
+* ``South America``
+* ``Web Appliance``

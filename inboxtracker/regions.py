@@ -11,6 +11,9 @@ class Regions(Resource):
         """
         Gets current list of regions supported by the system.
 
+        See
+        :ref:`Current Regions<docs/source/resources/regions.rst>`
+
         :return: 'list' object
         """
 

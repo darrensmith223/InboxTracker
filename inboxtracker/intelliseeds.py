@@ -19,7 +19,8 @@ class Intelliseeds(Resource):
 
         :param childAccountId:  The child account to narrow results
         :param type:  The type of IntelliSeed list to pull.
-            Accepts: "public", "private", "exclusive". Default is private
+
+            Accepts: ``public``, ``private``, ``exclusive``. Default is private
 
         :return:  'list' object
         """
@@ -85,9 +86,12 @@ class Intelliseeds(Resource):
         Places a new IntelliSeed filter set under the given account
 
         :param name: Name of the filter set
-        :param listType: Privacy level of list. Accepts: "PUBLIC", "EXCLUSIVE", "PRIVATE"
+        :param listType: Privacy level of list.
+
+            Accepts: ``PUBLIC``, ``EXCLUSIVE``, ``PRIVATE``
         :param simulatedEngagementOption: Engagement level of the IntelliSeeds to include in the list.
-            Accepts: "ALL", "ENGAGING", "NON_ENGAGING"
+
+            Accepts: ``ALL``, ``ENGAGING``, ``NON_ENGAGING``
         :param percentOfList: Percent of the list to include. Integer from 0-100.
         :param regions: List of regions to include.
         :param childAccountId: The child account to place filter

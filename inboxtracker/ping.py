@@ -8,7 +8,7 @@ class Ping(Resource):
         """
         Ping the server to verify it is reachable
 
-        :return:  'string' object.  A successful ping will return the string 'pong'.
+        :return:  A 'str' object.  A successful ping will return the string 'pong'.
         """
 
         endpoint = ""

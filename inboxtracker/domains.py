@@ -12,9 +12,9 @@ class Domains(Resource):
         """
         Get all domains available within your account
 
-        :param childAccountId:  The child account to narrow results
+        :param int childAccountId:  The child account to narrow results
 
-        :return:  'list' object
+        :return:  A 'list' object of 'dict' containing details of the domains available.
         """
 
         endpoint = "/available"

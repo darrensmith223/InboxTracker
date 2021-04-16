@@ -12,9 +12,9 @@ class Seeds(Resource):
         """
         Get the time of the last update to the Traditional Seeds list
 
-        :param childAccountId:  The child account to narrow results
+        :param int childAccountId:  The child account to narrow results
 
-        :return:  'list' object
+        :return:  A 'list' object of 'dict' containing the seed list ID, account ID, and last updated date
         """
 
         endpoint = "/lastUpdate"
@@ -28,9 +28,9 @@ class Seeds(Resource):
         """
         Get the Traditional Seeds usage information for your account
 
-        :param childAccountId:  The child account to narrow results
+        :param int childAccountId:  The child account to narrow results
 
-        :return:  'list' object
+        :return:  A 'list' object of 'dict' containing the usage details of the seed list.
         """
 
         endpoint = "/usage"
@@ -44,9 +44,10 @@ class Seeds(Resource):
         """
         Get an updated Traditional Seeds list
 
-        :param childAccountId:  The child account to narrow results
+        :param int childAccountId:  The child account to narrow results
 
-        :return:  'list' object
+        :return:  A 'list' object of 'dict' containing the details of the seeds, such as the email address, location,
+            and ISP.
         """
 
         endpoint = ""

@@ -17,12 +17,22 @@ class Intelliseeds(Resource):
         """
         Get an updated IntelliSeed list
 
-        :param childAccountId:  The child account to narrow results
-        :param type:  The type of IntelliSeed list to pull.
+        :param int childAccountId:  The child account to narrow results
+        :param str type:  The type of IntelliSeed list to pull.
 
             Accepts: ``public``, ``private``, ``exclusive``. Default is private
+        :param int percentOfList:  The integer percent, 1-100, of the IntelliSeed list to pull. Default is 100
+        :param str simulatedEngagementOption:  Which engagement types of IntelliSeed accounts to include.
 
-        :return:  'list' object
+            Accepts:  ``ALL``, ``ENGAGING``, and ``NON_ENGAGING``.  Default is ``ALL``
+        :param list|str regions:  Which regions to include IntelliSeed accounts from.
+            For options, See
+            `Current Regions<https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`
+
+            Default is all regions.
+
+        :return:  A 'list' object of 'dict' containing details of an IntelliSeed address, including email address,
+            location, and ISP.
         """
 
         endpoint = ""
@@ -36,9 +46,9 @@ class Intelliseeds(Resource):
         """
         Get the time of the last update to IntelliSeed List
 
-        :param childAccountId:  The child account to narrow results
+        :param int childAccountId:  The child account to narrow results
 
-        :return:  'list' object
+        :return:  A 'list' object of 'dict' containing the account ID and last update date of the IntelliSeed list.
         """
 
         endpoint = "/lastUpdate"
@@ -52,9 +62,9 @@ class Intelliseeds(Resource):
         """
         Get the list of IntelliSeed filter sets configured for an account
 
-        :param childAccountId: The child account to narrow results
+        :param int childAccountId: The child account to narrow results
 
-        :return: 'list' object
+        :return: A 'list' object of 'dict' containing details of a filter set, such as the name of the IntelliSeed list.
         """
 
         endpoint = "/filter_sets"
@@ -68,10 +78,11 @@ class Intelliseeds(Resource):
         """
         Gets the latest IntelliSeed list associated with the filter set id provided
 
-        :param filterSetId: The id of the IntelliSeed filter set
-        :param childAccountId: The child account to narrow results
+        :param int filterSetId: The id of the IntelliSeed filter set
+        :param int childAccountId: The child account to narrow results
 
-        :return: 'list' object
+        :return: A 'list' object of 'dict' containing details of the specified filter set, such as the name and ID of
+            the IntelliSeed list.
         """
 
         endpoint = "/" + str(filterSetId)
@@ -85,18 +96,18 @@ class Intelliseeds(Resource):
         """
         Places a new IntelliSeed filter set under the given account
 
-        :param name: Name of the filter set
-        :param listType: Privacy level of list.
+        :param str name: Name of the filter set
+        :param str listType: Privacy level of list.
 
             Accepts: ``PUBLIC``, ``EXCLUSIVE``, ``PRIVATE``
-        :param simulatedEngagementOption: Engagement level of the IntelliSeeds to include in the list.
+        :param str simulatedEngagementOption: Engagement level of the IntelliSeeds to include in the list.
 
             Accepts: ``ALL``, ``ENGAGING``, ``NON_ENGAGING``
-        :param percentOfList: Percent of the list to include. Integer from 0-100.
-        :param regions: List of regions to include.
-        :param childAccountId: The child account to place filter
+        :param int percentOfList: Percent of the list to include. Integer from 0-100.
+        :param list|str regions: List of regions to include.
+        :param int childAccountId: The child account to place filter
 
-        :return: 'dict' object
+        :return: A 'dict' object containing the details of the crated IntelliSeed list, such as the name and ID.
         """
 
         data_model = {
@@ -120,10 +131,10 @@ class Intelliseeds(Resource):
         """
         Removes the IntelliSeed filter set using the filter set id provided
 
-        :param filterSetId: The id of the IntelliSeed filter set
-        :param childAccountId: The child account to narrow results
+        :param int filterSetId: The id of the IntelliSeed filter set
+        :param int childAccountId: The child account to narrow results
 
-        :return: 'dict' object
+        :return: A 'dict' object containing the details of the deleted IntelliSeed list, such as the name and ID.
         """
 
         endpoint = "/filter_sets/" + str(filterSetId)

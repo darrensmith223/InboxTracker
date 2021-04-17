@@ -1,35 +1,27 @@
 Ping
 ====
 
-Some text about Ping. Let's use the underlying `InboxTracker API`_ to send a friendly test message:
+Pinging the InboxTracker service enables you to verify that the service is available, which can be useful when
+troubleshooting, as shown below:
 
 .. code-block:: python
 
     from inboxtracker import InboxTracker
 
-    Code
+    it = InboxTracker("API_KEY")
 
-.. _InboxTracker API: http://api.edatasource.com/docs/#/inbox
+    response = it.ping.ping_service()
+    print(response)
 
 
-Header 1
---------
-
-Header 1.1
-**********
+Ping the InboxTracker Service
+-----------------------------
 
 .. code-block:: python
 
     from inboxtracker import InboxTracker
 
-    Code
+    it = InboxTracker("API_KEY")
 
+    it.ping.ping_service()
 
-Header 1.2
-**********
-
-.. code-block:: python
-
-    from inboxtracker import InboxTracker
-
-    Code

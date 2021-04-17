@@ -13,10 +13,30 @@ Guide:
    :maxdepth: 2
    :caption: Contents
 
+
+Installation
+------------
+
+Install from Pypi using pip:
+
+.. code-block:: bash
+
+   $ pip install inboxtracker
+
+
+Authorization
+-------------
+
+You will need an API key to authenticate using the InboxTracker Python client.  To get an API key for your InboxTracker
+account, `contact support`_ through the InboxTracker app.
+
+.. _contact support: https://app.emailanalyst.com/bin/#/login
+
+
 Resources
 ---------
 
-The following resources are available in python-sparkpost:
+The following resources are available in InboxTracker:
 
 .. toctree::
     :glob:
@@ -28,13 +48,28 @@ The following resources are available in python-sparkpost:
 API reference
 -------------
 
-Auto-generated API reference for python-sparkpost:
+Auto-generated API reference for InboxTracker:
 
 .. toctree::
     :maxdepth: 2
 
     api
 
+
+Further Examples
+----------------
+
+See the `InboxTracker Examples`_.
+
+.. _InboxTracker Examples: https://github.com/darrensmith223/InboxTracker
+
+
+API reference
+-------------
+
+See the `InboxTracker API Reference`_.
+
+.. _InboxTracker API Reference: http://api.edatasource.com/docs/#/
 
 Indices and tables
 ==================

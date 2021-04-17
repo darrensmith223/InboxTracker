@@ -1,35 +1,35 @@
 Deliverability
 ==============
 
-Some text about Deliverability. Let's use the underlying `InboxTracker API`_ to send a friendly test message:
+Deliverability insights enable a sender to understand and monitor how the mailings are performing after the Mailbox
+Provider accepts them.  Deliverability data for a sending domain can be accessed using the `InboxTracker API`_, as shown
+below:
 
 .. code-block:: python
 
     from inboxtracker import InboxTracker
 
-    Code
+    it = InboxTracker("API_KEY")
+
+    response = XYZ
+    print(response)
 
 .. _InboxTracker API: http://api.edatasource.com/docs/#/inbox
 
 
-Header 1
---------
-
-Header 1.1
-**********
+Get Deliverability Stats for Domain
+-----------------------------------
 
 .. code-block:: python
 
     from inboxtracker import InboxTracker
 
-    Code
+    it = InboxTracker("API_KEY")
+
+    it.deliverability.get_deliverability_by_domain(
+        domain="example.com",
+        qd="daysBack:1",
+        embed="gmailCategories"
+    )
 
 
-Header 1.2
-**********
-
-.. code-block:: python
-
-    from inboxtracker import InboxTracker
-
-    Code

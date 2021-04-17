@@ -16,7 +16,7 @@ Guide:
 Resources
 ---------
 
-The following resources are available in python-sparkpost:
+The following resources are available in InboxTracker:
 
 .. toctree::
     :glob:
@@ -28,13 +28,28 @@ The following resources are available in python-sparkpost:
 API reference
 -------------
 
-Auto-generated API reference for python-sparkpost:
+Auto-generated API reference for InboxTracker:
 
 .. toctree::
     :maxdepth: 2
 
     api
 
+
+Further Examples
+----------------
+
+See the `InboxTracker Examples`_.
+
+.. _InboxTracker Examples: https://github.com/darrensmith223/InboxTracker
+
+
+API reference
+-------------
+
+See the `InboxTracker API Reference`_.
+
+.. _InboxTracker API Reference: http://api.edatasource.com/docs/#/
 
 Indices and tables
 ==================

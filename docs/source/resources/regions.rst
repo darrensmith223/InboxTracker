@@ -1,28 +1,35 @@
 Regions
 =======
 
-Some text about Regions. Let's use the underlying `InboxTracker API`_ to send a friendly test message:
+The IntelliSeeds list accessible in InboxTracker provide insight into the performance of campaigns globally.  The
+IntelliSeeds are organized into regions, which can be used to create filters.  The regions supported by InboxTracker
+can be accessed using the `InboxTracker API`_, as shown below:
 
 .. code-block:: python
 
     from inboxtracker import InboxTracker
 
-    Code
+    it = InboxTracker("API_KEY")
+
+    response = it.regions.get_regions()
+    print(response)
 
 .. _InboxTracker API: http://api.edatasource.com/docs/#/inbox
 
 
-Header 1
---------
+Get Regions
+-----------
 
-Header 1.1
-**********
+List All Supported Regions
+**************************
 
 .. code-block:: python
 
     from inboxtracker import InboxTracker
 
-    Code
+    it = InboxTracker("API_KEY")
+
+    it.regions.get_regions()
 
 
 Supported Regions

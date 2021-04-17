@@ -20,7 +20,7 @@ class Intelliseeds(Resource):
         :param int childAccountId:  The child account to narrow results
         :param str type:  The type of IntelliSeed list to pull.
 
-            Accepts:  ``public``, ``private``, ``exclusive``. Default is private
+            Accepts:  ``PUBLIC``, ``PRIVATE``, ``EXCLUSIVE``. Default is ``PRIVATE``
         :param int percentOfList:  The integer percent, 1-100, of the IntelliSeed list to pull. Default is 100
         :param str simulatedEngagementOption:  Which engagement types of IntelliSeed accounts to include.
 

@@ -1,8 +1,8 @@
 Campaigns
 ==========
 
-InboxTracker will track the campaigns sent from a domain and provide insights into how the campaigns are performing.
-Campaign performance data within InboxTracker can be accessed using the `InboxTracker API`_, as shown below:
+Inbox Tracker will track the campaigns sent from a domain and provide insights into how the campaigns are performing.
+Campaign performance data within Inbox Tracker can be accessed using the `Inbox Tracker API`_, as shown below:
 
 .. code-block:: python
 
@@ -13,7 +13,7 @@ Campaign performance data within InboxTracker can be accessed using the `InboxTr
     response = it.campaigns.get_campaigns(qd="daysBack:1")
     print(response)
 
-.. _InboxTracker API: http://api.edatasource.com/docs/#/inbox
+.. _Inbox Tracker API: http://api.edatasource.com/docs/#/inbox
 
 
 List All Campaigns

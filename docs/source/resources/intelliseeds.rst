@@ -1,11 +1,11 @@
-Intelliseeds
+IntelliSeeds
 ============
 
 IntelliSeeds are virtual users who interact with email in their inbox to provide realistic modeling, based on
 engagement profiles from the InboxTracker consumer panel.  Learn more about `IntelliSeeds here`_.  IntelliSeeds are
-organized into a list that can be retrieved and included as recipients in campaigns to provide deliverability
-performance insight, such as inbox and spam folder placement.  The list of IntelliSeeds can be accessed using the
-`InboxTracker API`_, as shown below:
+organized into a list that can be retrieved and included as recipients in your campaigns to provide deliverability
+performance insight, such as inbox and spam folder placement.  The most current list of IntelliSeeds can be retrieved
+using the `InboxTracker API`_, as shown below:
 
 
 .. code-block:: python
@@ -56,10 +56,8 @@ Filter IntelliSeed List
 Using Filter Sets
 -----------------
 
-Text about Filter Sets.  What they are.  How to use them.  Why you should care.
-
 Filter Sets are stored IntelliSeed lists that have customized with filters.  Filter Sets allow you to create multiple
-IntelliSeed lists with different characteristics, and store them for reuse.  For example, you may wish to have a
+IntelliSeed lists with different attributes, and store them for reuse.  For example, you may wish to have a
 separate list of IntelliSeeds for domestic and international mailings.
 
 

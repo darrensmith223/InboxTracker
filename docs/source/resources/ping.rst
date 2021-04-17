@@ -1,7 +1,7 @@
 Ping
 ====
 
-Pinging the InboxTracker service enables you to verify that the service is accessible, which can be useful when
+Pinging the InboxTracker service enables you to verify that the service is available, which can be useful when
 troubleshooting, as shown below:
 
 .. code-block:: python

@@ -1,8 +1,8 @@
 Regions
 =======
 
-The IntelliSeeds list accessible in InboxTracker provide insight into the performance of campaigns globally.  The
-IntelliSeeds are organized into regions, which can be used to create filters.  The regions supported by InboxTracker
+The IntelliSeeds list accessible within InboxTracker provides insight into the performance of campaigns at Mailbox
+Providers across the globe.  The IntelliSeeds are organized by region, which can be used to create filters.  The regions supported by InboxTracker
 can be accessed using the `InboxTracker API`_, as shown below:
 
 .. code-block:: python

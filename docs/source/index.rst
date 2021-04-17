@@ -13,6 +13,26 @@ Guide:
    :maxdepth: 2
    :caption: Contents
 
+
+Installation
+------------
+
+Install from Pypi using pip:
+
+.. code-block:: bash
+
+   $ pip install inboxtracker
+
+
+Authorization
+-------------
+
+You will need an API key to authenticate using the InboxTracker Python client.  To get an API key for your InboxTracker
+account, `contact support`_ through the InboxTracker app.
+
+.. _contact support: https://app.emailanalyst.com/bin/#/login
+
+
 Resources
 ---------
 

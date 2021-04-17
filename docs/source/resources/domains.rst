@@ -2,7 +2,7 @@ Domains
 =======
 
 InboxTracker will track the performance of mailings sent from all of the sending domains on your InboxTracker account.
-The sending domains that are currently tracked in your InboxTracker account can be accessed with the
+The sending domains that are currently tracked in your InboxTracker account can be retrieved with the
 `InboxTracker API`_, as shown below:
 
 .. code-block:: python

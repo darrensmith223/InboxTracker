@@ -28,7 +28,7 @@ class Intelliseeds(Resource):
 
         :param regions:  List of strings.  The regions to include IntelliSeed accounts from.
             For options, See
-            `Current Regions <https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
+            `Current Regions <https://inboxtracker.readthedocs.io/en/latest/resources/regions.html#supported-regions>`_
 
             Default is all regions.
 
@@ -107,7 +107,7 @@ class Intelliseeds(Resource):
             Accepts: ``ALL``, ``ENGAGING``, ``NON_ENGAGING``
         :param int percentOfList: Percent of the list to include. Integer from 0-100.
         :param regions: List of strings.  The regions to include.  For options, See
-            `Current Regions <https://inboxtracker.readthedocs.io/en/latest/resources/regions.html>`_
+            `Current Regions <https://inboxtracker.readthedocs.io/en/latest/resources/regions.html#supported-regions>`_
         :param int childAccountId: The child account to place filter
 
         :return: A ``dict`` object containing the details of the crated IntelliSeed list, such as the name and ID.

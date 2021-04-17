@@ -61,7 +61,7 @@ Further Examples
 
 See the `InboxTracker Examples`_.
 
-.. _InboxTracker Examples: https://github.com/darrensmith223/InboxTracker
+.. _InboxTracker Examples: https://github.com/darrensmith223/InboxTracker/tree/main/examples
 
 
 API reference

@@ -1,9 +1,9 @@
 Domains
 =======
 
-InboxTracker will track the performance of mailings sent from all of the sending domains on your InboxTracker account.
-The sending domains that are currently tracked in your InboxTracker account can be retrieved with the
-`InboxTracker API`_, as shown below:
+Inbox Tracker will track the performance of mailings sent from all of the sending domains on your Inbox Tracker account.
+The sending domains that are currently tracked in your Inbox Tracker account can be retrieved with the
+`Inbox Tracker API`_, as shown below:
 
 .. code-block:: python
 
@@ -14,7 +14,7 @@ The sending domains that are currently tracked in your InboxTracker account can 
     response = it.domains.get_available_domains()
     print(response)
 
-.. _InboxTracker API: http://api.edatasource.com/docs/#/inbox
+.. _Inbox Tracker API: http://api.edatasource.com/docs/#/inbox
 
 
 List All Available Domains

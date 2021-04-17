@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-InboxTracker Python API Client
+Inbox Tracker Python API Client
 ========================================
 
 Guide:
@@ -27,7 +27,7 @@ Install from Pypi using pip:
 Authorization
 -------------
 
-You will need an API key to authenticate using the InboxTracker Python client.  To get an API key for your InboxTracker
+You will need an API key to authenticate using the Inbox Tracker Python client.  To get an API key for your Inbox Tracker
 account, `contact support`_ through the InboxTracker app.
 
 .. _contact support: https://app.emailanalyst.com/bin/#/login
@@ -70,6 +70,17 @@ API reference
 See the `InboxTracker API Reference`_.
 
 .. _InboxTracker API Reference: http://api.edatasource.com/docs/#/
+
+
+Contribute
+----------
+
+1. Check for open issues or open a fresh issue to start a discussion around a feature idea or a bug.
+2. Fork `the repository`_ on GitHub and make your changes in a branch on your fork
+3. Write a test which shows that the bug was fixed or that the feature works as expected.
+4. Send a pull request.
+
+.. _the repository: https://github.com/darrensmith223/InboxTracker
 
 Indices and tables
 ==================

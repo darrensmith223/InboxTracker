@@ -2,10 +2,10 @@ IntelliSeeds
 ============
 
 IntelliSeeds are virtual users who interact with email in their inbox to provide realistic modeling, based on
-engagement profiles from the InboxTracker consumer panel.  Learn more about `IntelliSeeds here`_.  IntelliSeeds are
+engagement profiles from the Inbox Tracker consumer panel.  Learn more about `IntelliSeeds here`_.  IntelliSeeds are
 organized into a list that can be retrieved and included as recipients in your campaigns to provide deliverability
 performance insight, such as inbox and spam folder placement.  The most current list of IntelliSeeds can be retrieved
-using the `InboxTracker API`_, as shown below:
+using the `Inbox Tracker API`_, as shown below:
 
 
 .. code-block:: python
@@ -17,7 +17,7 @@ using the `InboxTracker API`_, as shown below:
     response = it.intelliseeds.get_intelliseeds()
     print(response)
 
-.. _InboxTracker API: http://api.edatasource.com/docs/#/inbox
+.. _Inbox Tracker API: http://api.edatasource.com/docs/#/inbox
 .. _IntelliSeeds here: https://support.emailanalyst.com/en/articles/4495508-inside-intelliseeds-tools-and-techniques
 
 
@@ -91,7 +91,7 @@ Create a New Filter Set
     )
 
 
-Retrieve Intelliseeds From a Filter Set
+Retrieve IntelliSeeds From a Filter Set
 ***************************************
 
 .. code-block:: python

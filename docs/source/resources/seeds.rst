@@ -1,10 +1,11 @@
 Seeds
 =====
 
-Traditional Seeds are one data source that InboxTracker leverages to provide insight into the performance of campaigns.
+Traditional Seeds are one data source that Inbox Tracker leverages to provide insight into the performance of campaigns.
 Traditional Seeds are email addresses that senders can include as recipients in their mailings and are used by
-InboxTracker to provide a number of deliverability insights and metrics, including inbox placement and email
-authentication.  The most current list of Traditional Seeds can be retrieved using the `InboxTracker API`_, as shown below:
+Inbox Tracker to provide a number of deliverability insights and metrics, including inbox placement and email
+authentication.  The most current list of Traditional Seeds can be retrieved using the `Inbox Tracker API`_, as shown
+below:
 
 .. code-block:: python
 
@@ -15,7 +16,7 @@ authentication.  The most current list of Traditional Seeds can be retrieved usi
     response = it.seeds.get_seeds()
     print(response)
 
-.. _InboxTracker API: http://api.edatasource.com/docs/#/inbox
+.. _Inbox Tracker API: http://api.edatasource.com/docs/#/inbox
 
 
 Using Seed Lists

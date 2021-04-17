@@ -2,7 +2,7 @@ Deliverability
 ==============
 
 Deliverability insights enable a sender to understand and monitor how the mailings are performing after the Mailbox
-Provider accepts them.  Deliverability data for a sending domain can be accessed using the `InboxTracker API`_, as shown
+Provider accepts them.  Deliverability data for a sending domain can be accessed using the `Inbox Tracker API`_, as shown
 below:
 
 .. code-block:: python
@@ -14,7 +14,7 @@ below:
     response = XYZ
     print(response)
 
-.. _InboxTracker API: http://api.edatasource.com/docs/#/inbox
+.. _Inbox Tracker API: http://api.edatasource.com/docs/#/inbox
 
 
 Get Deliverability Stats for Domain

@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='inboxtracker',
-    version='0.1.0',
+    version='1.0.0',
     author='Darren Smith',
     author_email='darren.smith@sparkpost.com',
     packages=find_packages(),

@@ -3,7 +3,7 @@
 
 
 # InboxTracker
-Python library for Inbox Tracker
+Python library for [Inbox Tracker](https://www.sparkpost.com/inbox-tracker/)
 
 
 

@@ -11,7 +11,11 @@ below:
 
     it = InboxTracker("API_KEY")
 
-    response = XYZ
+    response = it.deliverability.get_deliverability_by_domain(
+        domain="example.com",
+        qd="daysBack:1",
+        embed="gmailCategories"
+    )
     print(response)
 
 .. _Inbox Tracker API: http://api.edatasource.com/docs/#/inbox

@@ -14,6 +14,9 @@ troubleshooting, as shown below:
     print(response)
 
 
+If the service is available, `ping_service()` will return the string `pong`.
+
+
 Ping the Inbox Tracker Service
 ------------------------------
 

@@ -49,7 +49,6 @@ class Resource(object):
         return response
 
     def SetParameters(self, args, model_remap):
-        # parameters = {"Authorization": self.api_key}
         parameters = {}
 
         model = copy.deepcopy(args)

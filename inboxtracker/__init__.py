@@ -7,7 +7,7 @@ from .regions import Regions
 from .seeds import Seeds
 
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 inboxTrackerURI = "api.edatasource.com"
 
 

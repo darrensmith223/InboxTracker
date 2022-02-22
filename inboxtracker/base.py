@@ -2,6 +2,7 @@ import copy
 import requests
 import inboxtracker
 from .exceptions import InboxTrackerAPIException
+import base64
 
 
 class RequestsTransport(object):
@@ -37,16 +38,18 @@ class Resource(object):
         return "%s/%s" % (self.base_uri, self.key)
 
     def request(self, method, uri, params, **kwargs):
+        key_b64 = base64.b64encode(bytes(self.api_key, "ascii"))
         headers = {
             'User-Agent': 'python-inboxtracker/' + inboxtracker.__version__,
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            "Authorization": "Basic " + key_b64.decode("ascii")
         }
         response = self.transport.request(method, uri, params=params, headers=headers,
                                           **kwargs)
         return response
 
     def SetParameters(self, args, model_remap):
-        parameters = {"Authorization": self.api_key}
+        parameters = {}
 
         model = copy.deepcopy(args)
 
@@ -79,21 +82,6 @@ class Resource(object):
                 to_model[to_key] = model.pop(from_key)
 
         return model
-
-    def MakeAPICall(self, apiUrl, parameters):
-        """
-        Make a GET API call to the server
-        :param apiUrl: The API URL to call
-        :param parameters:  The parameters to use in the API call
-        :return: 'response' object
-        """
-
-        response = requests.get(apiUrl, parameters)
-
-        if response.status_code == 200:
-            return response.text
-        else:
-            return "Problem Getting Data: " + response.reason
 
     def get(self):
         raise NotImplementedError

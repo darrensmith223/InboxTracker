@@ -22,8 +22,8 @@ copyright = '2021, Darren Smith'
 author = 'Darren Smith'
 
 # The full version, including alpha/beta/rc tags
-version = '0.1'
-release = '1.0.0'
+version = '1.1'
+release = '1.1.0'
 
 
 # -- General configuration ---------------------------------------------------

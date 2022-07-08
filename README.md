@@ -46,6 +46,12 @@ You can use the underlying Inbox Tracker API with the classes in the `inboxtrack
 * `inboxtracker.ping`
 * `inboxtracker.regions`
 * `inboxtracker.seeds`
+* `inboxtracker.spam_trap.available_domains`
+* `inboxtracker.spam_trap.domain`
+* `inboxtracker.spam_trap.ip`
+* `inboxtracker.spam_trap.ping`
+* `inboxtracker.postmaster_tools.yahoo`
+* `inboxtracker.postmaster_tools.pint`
 
 
 For example, we can retrieve deliverability data for all of the campaigns from the previous day using the `inboxtracker.campaigns` class:

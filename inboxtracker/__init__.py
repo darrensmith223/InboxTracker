@@ -5,9 +5,11 @@ from .intelliseeds import Intelliseeds
 from .ping import Ping
 from .regions import Regions
 from .seeds import Seeds
+from .postmaster_tools import PostmasterTools
+from .spam_trap import SpamTrap
 
 
-__version__ = '1.1.0'
+__version__ = '1.2.0'
 inboxTrackerURI = "api.edatasource.com"
 
 
@@ -24,3 +26,5 @@ class InboxTracker(object):
         self.ping = Ping(self.base_uri, self.api_key)
         self.regions = Regions(self.base_uri, self.api_key)
         self.seeds = Seeds(self.base_uri, self.api_key)
+        self.spam_trap = SpamTrap(self.base_uri, self.api_key)
+        self.postmaster_tools = PostmasterTools(self.base_uri, self.api_key)

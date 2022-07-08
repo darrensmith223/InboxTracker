@@ -9,7 +9,7 @@ from .postmaster_tools import PostmasterTools
 from .spam_trap import SpamTrap
 
 
-__version__ = '1.2.0'
+__version__ = '1.2.1'
 inboxTrackerURI = "api.edatasource.com"
 
 inbox_module = '/inbox'

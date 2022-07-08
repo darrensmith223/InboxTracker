@@ -2,9 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.1.0] - 2022-02-22
+## [1.2.0] - 2022-07-08
 ### Added
-- Updated authentication mechanism to leverage header
+- Spam Trap classes
+- Postmaster Tools classes
+
+## [1.1.0] - 2022-02-22
+### Updated
+- Authentication mechanism to leverage header
 
 ## [1.0.0] - 2021-04-19
 ### Added

@@ -89,7 +89,7 @@ Get Spam Trap Data by Domain with Campaign Details
 
     it = InboxTracker("API_KEY")
 
-    it.spam_trap.domain.get_traps_by_domain(
+    it.spam_trap.domain.get_domain_rollup(
         domain=["example.com"],
         qd="daysBack:1",
         trapSource=["ABUSIX", "CLOUDMARK", "SNDS", "GTN_PASSIVE", "GTN_ACTIVE"],

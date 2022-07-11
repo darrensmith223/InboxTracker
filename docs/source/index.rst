@@ -28,7 +28,7 @@ Authorization
 -------------
 
 You will need an API key to authenticate using the Inbox Tracker Python client.  To get an API key for your Inbox Tracker
-account, `contact support`_ through the InboxTracker app.
+account, `contact support`_ through the Inbox Tracker app.
 
 .. _contact support: https://app.emailanalyst.com/bin/#/login
 

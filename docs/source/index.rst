@@ -67,9 +67,9 @@ See the `InboxTracker Examples`_.
 API reference
 -------------
 
-See the `InboxTracker API Reference`_.
+See the `Inbox Tracker API Reference`_.
 
-.. _InboxTracker API Reference: http://api.edatasource.com/docs/#/
+.. _Inbox Tracker API Reference: http://api.edatasource.com/docs/#/
 
 
 Contribute
